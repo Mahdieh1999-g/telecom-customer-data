@@ -1,0 +1,7 @@
+{
+    "version_id": "v2",
+    "hash": "3f03c821ca512ba74261ad530c057385",
+    "description": "Second dataset version with more samples and feature distribution shift",
+    "n_rows": 480,
+    "created_at": "2026-09-16T15:53:53.514269"
+}

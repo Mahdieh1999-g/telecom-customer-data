@@ -1,0 +1,31 @@
+# ML Project Configuration
+# TODO: Fill in the values below
+
+data:
+  raw_path: "data/raw/dataset_v1.csv"
+  processed_path: "data/processed/"
+  test_size: 0.2   # TODO: e.g., 0.2
+  random_state: 42 # TODO: e.g., 42
+  file_name: "dataset_v1.csv"
+  target_column: "churn"
+
+features:
+  scaling: "standard"     # TODO: "standard" or "minmax" or "none"
+  feature_selection_k: 10 # TODO: e.g., 10
+
+model:
+  type: "random_forest"        # TODO: "random_forest", "logistic_regression", or "svm"
+  params:
+    # TODO: Add hyperparameters for your chosen model
+    n_estimators: 200
+    max_depth: 10
+    min_samples_split: 2
+    random_state: 42
+
+experiments:
+  mlflow_tracking_uri: "http://localhost:5000"
+  experiment_name: "mlops_homework_01"
+
+monitoring:
+  drift_threshold: 0.05 # TODO: e.g., 0.05
+  log_path: "experiments/logs/"
